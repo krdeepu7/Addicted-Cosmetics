@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <title>All products | BEAU | online website design</title>
+    <link rel="stylesheet" href="webstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=poopins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="png/logo.png" width="150px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+
+                </ul>
+            </nav>
+            <img src="png/cart.png" width="22px" height="22px">
+            <img src="png/menu.png" class="menu-icon" onclick="menutoggle()">
+
+        </div>
+    </div>
+    <!--------------------------cart item details---------------->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="png/p1.jpeg">
+                        <div>
+                            <p>Product name</p>
+                            <small>price : $40.40</small>
+                            <br>
+                            <a href="">remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$40.40</td>
+                <td></td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="png/p3.jpeg">
+                        <div>
+                            <p>Product name</p>
+                            <small>price : $40.40</small>
+                            <br>
+                            <a href="">remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$40.40</td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="png/p2.jpeg">
+                        <div>
+                            <p>Product name</p>
+                            <small>price : $40.40</small>
+                            <br>
+                            <a href="">remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$40.40</td>
+                <td></td>
+
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>subtotal</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>tax</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>total</td>
+                    <td>$200</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <!-- Making a button for Checkout -->
+
+
+    <div class="checkout-btn">
+        <div class="d-grid gap-2 d-md-block" check-btn>
+            <button class="btn btn-primary" type="button">Button</button>
+        </div>
+    </div>
+
+    <!----------------------------footer------------------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Dolwnload App For Android And Ios Mobile Phone.</p>
+                    <div class="app-logo">
+                        <img src="png/playsto.png">
+                        <img src="png/appstore.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="png/logo.png">
+                    <p>Our Purpose Is to Sustainly Make The Pleasure And Benifits Of Cosmetics Accessible To Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blogs Post</li>
+                        <li>Return Policy</li>
+                        <li>join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - Team Alpha</p>
+        </div>
+    </div>
+
+
+
+
+
+    <!----------------js for toggle menu------------------->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
